@@ -270,7 +270,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70578249}
-  m_LocalRotation: {x: 0.03286333, y: -0.000000017197088, z: 5.65459e-10, w: 0.99945986}
+  m_LocalRotation: {x: 0.03286331, y: 0.000000017197086, z: -5.6545857e-10, w: 0.99945986}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -569,7 +569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &190532090
 AudioSource:
   m_ObjectHideFlags: 0
@@ -580,9 +580,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 79a6d017643db8243904b58e3468e4ca, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b323d09071f62974fbcbe8eb9216a67c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.466
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -883,7 +883,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313365763}
-  m_LocalRotation: {x: 0.014678223, y: -9.312224e-10, z: 1.3670161e-11, w: 0.9998923}
+  m_LocalRotation: {x: 0.014678219, y: -9.312224e-10, z: 1.3670158e-11, w: 0.9998923}
   m_LocalPosition: {x: -6.34, y: 2.1200001, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1057,7 +1057,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505560863}
-  m_LocalRotation: {x: 0.014678218, y: -5.5487236e-17, z: 1.5244954e-18, w: 0.9998923}
+  m_LocalRotation: {x: 0.014678217, y: -9.312223e-10, z: 1.3670155e-11, w: 0.9998923}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1508,7 +1508,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockRef:
-    block: {fileID: 1975137990}
+    block: {fileID: 1975138024}
+  mousePressed: 0
+  inArea: 0
+  blockExecuted: 0
 --- !u!65 &1266212396
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1668,7 +1671,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690349899}
-  m_LocalRotation: {x: -0.0034637016, y: 0.0000000020017374, z: 6.933462e-12, w: 0.99999404}
+  m_LocalRotation: {x: -0.0034637023, y: -5.7958344e-10, z: -2.0075174e-12, w: 0.99999404}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1687,7 +1690,6 @@ GameObject:
   - component: {fileID: 1975137992}
   - component: {fileID: 1975137988}
   - component: {fileID: 1975137990}
-  - component: {fileID: 1975137989}
   - component: {fileID: 1975138010}
   - component: {fileID: 1975138009}
   - component: {fileID: 1975138008}
@@ -1720,6 +1722,9 @@ GameObject:
   - component: {fileID: 1975138015}
   - component: {fileID: 1975138018}
   - component: {fileID: 1975138019}
+  - component: {fileID: 1975138024}
+  - component: {fileID: 1975138025}
+  - component: {fileID: 1975137989}
   m_Layer: 0
   m_Name: Fool Flowchart
   m_TagString: Untagged
@@ -1740,18 +1745,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 107.268036, y: -55.793816}
+  scrollPos: {x: 251.07811, y: 36.001446}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.73000026
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1975138008}
   selectedCommands: []
   variables: []
   description: 
@@ -1773,25 +1779,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1975137987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 1
+  itemId: 39
   indentLevel: 0
-  storyText: Oh hello there! What a lovely surprise to see someone else exploring
-    the possibilities of the world.
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1975137990}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 1
 --- !u!114 &1975137990
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1807,8 +1806,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 64.93813
-    y: 67.93814
-    width: 105.2
+    y: 66.80178
+    width: 63.698612
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1817,7 +1816,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1975137989}
   - {fileID: 1975138007}
   - {fileID: 1975138006}
   - {fileID: 1975138005}
@@ -1882,7 +1880,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 268.6288
     y: 143.81438
-    width: 76.4
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2296,7 +2294,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -104.56698
     y: 140.72162
-    width: 104.4
+    width: 60.410942
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2324,7 +2322,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 32.54637
     y: 138.65977
-    width: 72.4
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2353,7 +2351,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 143.96906
     y: 141.18558
-    width: 93.2
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2379,8 +2377,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 25
   indentLevel: 0
-  storyText: "Woah! What\u2019s that seashell in your bag? *you pull out seashell
-    /let fool hold (?)* It has a spiral - wicked!"
+  storyText: "Woah! What\u2019s that seashell in your bag? *you show the seashell
+    to the fool* \nIt has a spiral - wicked!"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2409,7 +2407,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 375.84537
     y: 145.87625
-    width: 99.6
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2493,7 +2491,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 320.73196
     y: 203.79382
-    width: 132.4
+    width: 86.7123
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2634,7 +2632,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 477.73196
     y: 205.79382
-    width: 129.2
+    width: 84.52052
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2712,6 +2710,62 @@ MonoBehaviour:
   storyText: "I think spirals can represent how you never know where life\u2019s
     going to take you - it\u2019s not linear. But somehow, it all makes sense in
     the end. Do you mind if I can keep this seashell?"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1975138024
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975137987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 66.78872
+    y: 9.673686
+    width: 62.602722
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 35
+  blockName: very start
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1975138025}
+  - {fileID: 1975137989}
+  suppressAllAutoSelections: 0
+--- !u!114 &1975138025
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975137987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  storyText: Oh hello there! What a lovely surprise to see someone else exploring
+    the possibilities of the world.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
