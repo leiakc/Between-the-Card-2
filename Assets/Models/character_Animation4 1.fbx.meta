@@ -1,20 +1,11 @@
 fileFormatVersion: 2
-guid: 89c6e882fdc9c0e4ba54e9bf95f306bc
+guid: bc1659f6b5c13b342ac75b301e13b10f
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
-      74: -3100369314251171874
-    second: Idle
-  - first:
-      74: 6281953650394205071
-    second: Run.001
-  - first:
       74: -7305240885795738425
     second: Character|Idle
-  - first:
-      74: -2013741860231632352
-    second: Character|Run
   - first:
       74: 7920101514083481901
     second: Character|Run.001

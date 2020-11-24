@@ -28,9 +28,11 @@ public class Third_Person_Movment : MonoBehaviour
         if (isGrounded && gravVelocity.y < 0) 
         {
             gravVelocity.y = -2f;
-        } 
-     
-        
+
+        }
+        gravVelocity.y += gravity * Time.deltaTime;
+        control.Move(gravVelocity * Time.deltaTime);
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
@@ -45,8 +47,8 @@ public class Third_Person_Movment : MonoBehaviour
             
             control.Move(moveDir.normalized * speed * Time.deltaTime);
 
-            gravVelocity.y += gravity * Time.deltaTime;
-            control.Move(gravVelocity * Time.deltaTime);
+           gravVelocity.y += gravity * Time.deltaTime;
+            //control.Move(gravVelocity * Time.deltaTime);
         }
     }
 }
