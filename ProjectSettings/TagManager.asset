@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Doorway
+  - Fool
+  - Crew
+  - Shell
   layers:
   - Default
   - TransparentFX
