@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GrassShader
-  m_Shader: {fileID: -6465566751694194690, guid: b9f211f548fe7a1499b8c97ed8fcbf78, type: 3}
+  m_Name: NPCShader
+  m_Shader: {fileID: -6465566751694194690, guid: 198dc99159217cf46b57ee8dab668bfe, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,24 +20,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_D7D2919C:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2DLOD_7B88F871_Texture_1:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 69b41cbfc544245448d1d789cca8bf83, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_102E94A4: 1.6
-    - Vector1_1179812E: 4.21
-    - Vector1_2A455339: 0.5
-    - Vector1_3DB753CE: 1.4
-    - Vector1_5A9E5888: 0.63
-    - Vector1_CD9CB9E8: 0.595
-    - Vector1_DE30E054: 90
+    - Vector1_2A455339: 0.45
+    - Vector1_5A9E5888: 0.2
+    - Vector1_CD9CB9E8: 1
     - Vector1_F5DCAAE8: 0.5
     m_Colors:
-    - Color_A57B6AC9: {r: 0.4457636, g: 0.745283, b: 0.4457636, a: 0}
+    - Color_A57B6AC9: {r: 1, g: 1, b: 1, a: 0}
     - Color_FA669E8D: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_5ACF8050: {r: -0.23, g: 1.12, b: 0.04, a: -0.24}
   m_BuildTextureStacks: []
