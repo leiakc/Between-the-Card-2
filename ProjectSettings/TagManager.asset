@@ -8,6 +8,8 @@ TagManager:
   - Fool
   - Crew
   - Shell
+  - wood
+  - notSeaSound
   layers:
   - Default
   - TransparentFX
